@@ -7,6 +7,7 @@
 <script>
 // import axios from 'axios'
 import jsonp from 'jsonp'
+import storage from './storage'
 export default {
   data(){
     return {
@@ -23,6 +24,8 @@ export default {
   //     console.log(res)
   //     this.data = res;
   //   })
+  // storage.setItem('a',1);
+  storage.setItem('abc',{a:1},'user');
   }
 }
 </script>
