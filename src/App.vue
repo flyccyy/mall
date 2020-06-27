@@ -25,7 +25,10 @@ export default {
   //     this.data = res;
   //   })
   // storage.setItem('a',1);
-  storage.setItem('abc',{a:1},'user');
+  // storage.setItem('abc',{a:1},'user');
+  this.axios.get('/mock/user/login.json').then((res)=>{
+    this.data = res;
+  })
   }
 }
 </script>
