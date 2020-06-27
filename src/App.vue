@@ -1,13 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  
     <router-view/>
   </div>
 </template>
-
+<script>
+// import axios from 'axios'
+import jsonp from 'jsonp'
+export default {
+  data(){
+    return {
+      data:''
+    }
+  },
+  mounted(){
+  //   let url = "/api/activity/servicetime";
+  //   // let url = "/activity/servicetime";
+  //   // axios.get(url).then(res=>{
+  //   //   console.log(res)
+  //   // })
+  //   jsonp(url,(err,res)=>{
+  //     console.log(res)
+  //     this.data = res;
+  //   })
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
