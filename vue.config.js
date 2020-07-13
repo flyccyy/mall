@@ -11,7 +11,7 @@ module.exports = {
       //   }
       // }
       '/api':{   //在每一个请求地址前都加上/api，这样就可以统一不同的接口
-        target:'https://www.imooc.com',
+        target:'https://mall-pre.springboot.cn',
         changeOrigin:true,   //要设置pathRewrite的话就要把changeOrigin设置为true
         pathRewrite:{
           'api':''   //作用是统一地址，真实的请求上是没有/api的，将请求的有/api的都变为空，比如/api/activity，最后就变为https://www.imooc.com/activity

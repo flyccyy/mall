@@ -37,6 +37,7 @@ li {
 }
 input {
   font: normal;
+  outline: none;
 }
 input:focus,
 a:focus {

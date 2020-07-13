@@ -23,7 +23,7 @@ if(mock){
 //如果是jsonp跨域或者cors跨域，即后端的域名跟前端的不一样的时候，地址就要写完整，比如axios.defaults.baseURL = 'http://www.baidu.com'
 
 //这里是接口代理，如果是easymock,直接改这里的基地址
-// axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = '/api'
 axios.defaults.timeout = 8000;
 
 //根据环境变量获取不同的请求地址
